@@ -28,7 +28,7 @@
 
 #pragma once
 #ifndef IMGUI_DISABLE
-#include "imgui.h"      // IMGUI_IMPL_API
+#include "../imgui.h"      // IMGUI_IMPL_API
 
 // [Configuration] in order to use a custom Vulkan function loader:
 // (1) You'll need to disable default Vulkan function prototypes.
@@ -55,7 +55,7 @@
 
 // Vulkan includes
 #ifdef IMGUI_IMPL_VULKAN_USE_VOLK
-#include <Volk/volk.h>
+#include <volk.h>
 #else
 #include <vulkan/vulkan.h>
 #endif
